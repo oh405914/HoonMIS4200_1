@@ -20,6 +20,11 @@ namespace HoonMIS4200.DAL
         public DbSet<Product> Products { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         // add this method - it will be used later
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Professor> Professors { get; set; }
+        public DbSet<CourseDetail> CourseDetails { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
