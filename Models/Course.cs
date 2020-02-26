@@ -20,6 +20,7 @@ namespace HoonMIS4200.Models
         public ICollection<CourseDetail> CourseDetail { get; set; }
         //Order is on the Many side of the one-to-many relation between Customer
         //and Order and we represent that relationship like this
+        [Display(Name = "Student ID")]
         public int studentID { get; set; }
         public virtual Student Student { get; set; }
     }
